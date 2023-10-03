@@ -22,12 +22,12 @@ if (process.env.NODE_ENV !== 'development'){
 }*/
 
 /* Controller Goes Here Remove the tes*/
-/*app.get('/test', (req, res)=>{
+app.get('/', (req, res)=>{
 	res.status(200).json({
 		website: 'Movie API',
 		info: 'Not that much'
 	})
-})*/
+})
 /* Controller Ends here */
 //LISTENER
 

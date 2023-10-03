@@ -7,7 +7,7 @@ import "./styles.css";
 import SearchForm from "./components/SearchForm";
 
 export default function App() {
-  const apiKey = process.env.API_KEY; // this would be in .env
+  const apiKey = process.env.API_KEY; 
 
   const [movie, setMovie] = useState(null);
   const [movies, setMovies] = useState([]);
