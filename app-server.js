@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { useEffect, useState } from "react";
 import Form from "./components/Form";
 import MovieDisplay from "./components/MovieDisplay";
@@ -6,7 +7,7 @@ import "./styles.css";
 import SearchForm from "./components/SearchForm";
 
 export default function App() {
-  const apiKey = "98e3fb1f"; // this would be in .env
+  const apiKey = process.env.API_KEY; // this would be in .env
 
   const [movie, setMovie] = useState(null);
   const [movies, setMovies] = useState([]);

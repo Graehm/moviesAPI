@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3009;
-const mongoose = require('mongoose');
+/*const mongoose = require('mongoose');*/
 const path = require('path');
 
 /* Add MongoDB here after connecting database in .env
@@ -16,18 +16,18 @@ db.on('open', () => {
 */
 
 /* Middleware */
-app.use(express.json());
+/*app.use(express.json());
 if (process.env.NODE_ENV !== 'development'){
   app.use(express.static('public'))
-}
+}*/
 
 /* Controller Goes Here Remove the tes*/
-app.get('/test', (req, res)=>{
+/*app.get('/test', (req, res)=>{
 	res.status(200).json({
 		website: 'Movie API',
 		info: 'Not that much'
 	})
-})
+})*/
 /* Controller Ends here */
 //LISTENER
 
@@ -40,6 +40,15 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
     console.log(`API Listening on port ${PORT}`);
 });
+
+
+
+
+
+
+
+
+
 
 
 
